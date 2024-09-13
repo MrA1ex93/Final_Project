@@ -1,7 +1,7 @@
 ﻿using Final_Project.Pages;
 using NUnit.Allure.Core;
 
-namespace Final_Project.Tests
+namespace Final_Project.Tests.UI
 {
     [AllureNUnit]
     internal class MyAccountPageTest : BasePageTest

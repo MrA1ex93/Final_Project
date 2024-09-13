@@ -2,7 +2,7 @@
 using NUnit.Allure.Core;
 using OpenQA.Selenium;
 
-namespace Final_Project.Tests
+namespace Final_Project.Tests.UI
 {
     [AllureNUnit]
     internal class HomePageTest : BasePageTest
@@ -63,7 +63,6 @@ namespace Final_Project.Tests
         [Test]
         public void CheckMoreButtonFunctionality()
         {
-
             var elementFrom = HomePage.HomeFeaturedProductsPopular.FindChildElements();
             IWebElement moreToCartButton;
             string ProductsLink;

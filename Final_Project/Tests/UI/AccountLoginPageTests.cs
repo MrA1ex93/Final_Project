@@ -1,7 +1,7 @@
 ﻿using Final_Project.Pages;
 using NUnit.Allure.Core;
 
-namespace Final_Project.Tests
+namespace Final_Project.Tests.UI
 {
     [AllureNUnit]
     internal class AccountLoginPageTests : BasePageTest
@@ -15,7 +15,7 @@ namespace Final_Project.Tests
             var text = MyAccountPage.PageName.GetText();
             Assert.That(MyAccountPage.PageName.GetText() == "MY ACCOUNT", Is.True);
         }
-        
+
         [Test]
         public void ErrorOnAccountCreation()
         {

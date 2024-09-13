@@ -1,7 +1,7 @@
 ﻿using Final_Project.Pages;
 using NUnit.Allure.Core;
 
-namespace Final_Project.Tests
+namespace Final_Project.Tests.UI
 {
     [AllureNUnit]
     internal class CartPageTest : BasePageTest
@@ -12,7 +12,7 @@ namespace Final_Project.Tests
             Assert.That(TitlePage.Cart.ElementDispleed(), Is.True);
             TitlePage.Cart.Click();
             Assert.That(CartPage.CartTitle.GetText() == "SHOPPING-CART SUMMARY", Is.True);
-        }        
+        }
 
         [Test]
         public void DeleteFromCart()

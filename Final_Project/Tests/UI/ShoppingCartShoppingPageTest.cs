@@ -2,7 +2,7 @@
 using NUnit.Allure.Core;
 using OpenQA.Selenium;
 
-namespace Final_Project.Tests
+namespace Final_Project.Tests.UI
 {
     [AllureNUnit]
     internal class ShoppingCartShoppingPageTest : BasePageTest

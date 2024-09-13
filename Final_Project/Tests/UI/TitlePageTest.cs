@@ -3,12 +3,12 @@ using NUnit.Allure.Core;
 using RestSharp;
 using System.Net;
 
-namespace Final_Project.Tests
+namespace Final_Project.Tests.UI
 {
     [AllureNUnit]
     internal class TitlePageTest : BasePageTest
     {
-        [Test]
+        [Test]        
         public void CheckingTheWomanMenu()
         {
             TitlePage.VerifySubMenu(TitlePage.WOMENButton, TitlePage.SubMenuWOMENButton);
@@ -36,7 +36,6 @@ namespace Final_Project.Tests
             string correctUrlSuitsSubMenuWOMEN = "http://prestashop.qatestlab.com.ua/en/17-suits";
             string correctUrlShoesSubMenuWOMEN = "http://prestashop.qatestlab.com.ua/en/15-shoes";
             string correctUrlBagsSubMenuWOMEN = "http://prestashop.qatestlab.com.ua/en/16-bags";
-
 
             TitlePage.ScrollToElement(TitlePage.WOMENButton);
             Assert.That(TitlePage.CheckElementUrl(TitlePage.WOMENButton, correctUrlWOMENButton));
